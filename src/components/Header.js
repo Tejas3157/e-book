@@ -22,7 +22,7 @@ function Header() {
                     </Nav>
                     {/* Right: Login & Sign Up */}
                     <div className="d-flex align-items-center ms-auto">
-                        <Nav.Link href="/login" style={{ color: '#f8f9fa' }}>Login</Nav.Link>
+                        <Nav.Link href="/login" style={{ color: '#f8f9fa' }}>Login</Nav.Link>``
                         <Nav.Link
                             href="/signup"
                             style={{

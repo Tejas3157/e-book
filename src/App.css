@@ -1,0 +1,78 @@
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Playfair+Display:wght@600&display=swap');
+
+/* Background theme */
+.navbar-custom {
+  background: linear-gradient(90deg, #002f4b 0%, #000428 100%);
+  backdrop-filter: blur(8px);
+}
+
+/* Brand fonts and hover effect */
+.brand-name {
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.book-part {
+  font-family: 'Orbitron', sans-serif;
+  color: #00d4ff;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+
+.verse-part {
+  font-family: 'Playfair Display', serif;
+  color: #ff8a00;
+  margin-left: 2px;
+  text-shadow: 0 0 8px rgba(255, 138, 0, 0.5);
+}
+
+/* Hover glow for brand */
+.brand-name:hover .book-part {
+  color: #33e0ff;
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.9);
+}
+.brand-name:hover .verse-part {
+  color: #ffc14d;
+  text-shadow: 0 0 12px rgba(255, 193, 77, 0.9);
+}
+
+/* Navbar links */
+.nav-links .nav-link {
+  color: #fff !important;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #00d4ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 50%;
+}
+
+.nav-links .nav-link:hover {
+  color: #00d4ff !important;
+}
+
+/* Button hover transitions */
+.custom-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
